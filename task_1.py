@@ -9,11 +9,11 @@
 # Вывод:
 #     Парам пам-пам
 
-phrase = 'пара-ра-рам рам-пам-папам па-ра-па-дам'
+phrase = "пара-ра-рам рам-пам-папам па-ра-па-дам"
 def countA(words):
     a = 0
     for i in words:
-        if i == 'а':
+        if i == "а":
             a += 1
     return a
 list_1 = list(map(countA, phrase.split()))
@@ -23,9 +23,9 @@ for i in list_1:
     if i == a:
         count += 1
 if count == len(list_1):
-    print('Парам пам-пам')
+    print("Парам пам-пам")
 else:
-    print('Пам парам')
+    print("Пам парам")
 
 
 

@@ -15,10 +15,10 @@
 def print_operation_table(op, x, y):
     for i in range(1, x + 1):
         for j  in range(1, y + 1):
-            print(op(i, j), end = ' ')
-        print('')
-num_rows = int(input('num_rows = '))
-num_columns = int(input('num_columns = '))
+            print(op(i, j), end = " ")
+        print("")
+num_rows = int(input("Введите количество строк -> "))
+num_columns = int(input("Введите количество столбцов -> "))
 print_operation_table(lambda x, y: x * y, num_rows, num_columns)
 
 
